@@ -1,0 +1,51 @@
+<!DOCTYPE html = "dark-theme">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">AI</div>
+                    <h1>AI Assistant</h1>
+                </div>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message ai-message">
+                <div class="avatar">AI</div>
+                <div class="message-content">
+                    <p>Hello! How can I help you today?</p>
+                    <span class="message-time"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="message-input">
+            <textarea 
+                id="input" 
+                placeholder="Type your message..." 
+                rows="1" 
+                onInput="autoResize(this)"
+            ></textarea>
+            <button onclick="sendMessage()" class="send-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
