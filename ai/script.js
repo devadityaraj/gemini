@@ -1,7 +1,7 @@
-console.log("Based on Gemini AI");
-const API_KEY = 'AIzaSyCPhaOkNh09vHwDzBb065l4RNx8OwofD0w'; //GEMINI API KEY
+const API_KEY = ''; //Enter your GEMINI API KEY - get your api key from -> https://aistudio.google.com/
 const chatMessages = document.getElementById('chat-messages');
 const inputElement = document.getElementById('input');
+console.log("Based on Gemini AI");
 document.body.classList.toggle('dark-theme');
 console.log("Dark Mode Loaded (Default)")
 
